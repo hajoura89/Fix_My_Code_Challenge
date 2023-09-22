@@ -4,7 +4,6 @@
     
     The size of the square must be the first argument 
     of the program.
-    Fix Error by removing 16 from size = parseInt(process.argv[2],16)
 */
 
 

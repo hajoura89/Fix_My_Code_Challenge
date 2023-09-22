@@ -1,7 +1,8 @@
 ###
 #
 #  Sort integer arguments (ascending) 
-# Fix Error by replacing result.insert(i - 1, i_arg) by result.insert(i, i_arg)#
+#  Fix Error by replacing result.insert(i - 1, i_arg) by result.insert(i, i_arg)#
+#  and replacing result[i] < by <= i_arg
 ###
 
 result = []
@@ -17,7 +18,7 @@ ARGV.each do |arg|
     i = 0
     l = result.size
     while !is_inserted && i < l do
-        if result[i] < i_arg
+        if result[i] <= i_arg
             i += 1
         else
             result.insert(i, i_arg)
